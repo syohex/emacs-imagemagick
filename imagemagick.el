@@ -1,6 +1,6 @@
-;;; imagemagick.el --- imagemagick binding of Emacs Lisp
+;;; imagemagick.el --- ImageMagick++ binding of Emacs Lisp -*- lexical-binding: t -*-
 
-;; Copyright (C) 2012 by Shohei YOSHIDA
+;; Copyright (C) 2020 by Shohei YOSHIDA
 
 ;; Author: Syohei YOSHIDA <syohex@gmail.com>
 ;; URL: https://github.com/syohex/emacs-imagemagick
@@ -50,7 +50,7 @@
   (imagemagick-core-blur src dest radius sigma))
 
 (defun imagemagick-size (src)
-  "Get image size as list (rows . columns)"
+  "Get image size as cons list (rows . columns)"
   (unless (file-exists-p src)
     (user-error "Source file %s does not exists" src))
   (imagemagick-core-size src))

@@ -1,6 +1,6 @@
 # imagemagick.el
 
-Emacs binding of [imagemagick](https://imagemagick.org/index.php) inspired by [mruby-mrmagick](https://github.com/kjunichi/mruby-mrmagick)
+Emacs binding of [ImageMagick++](https://imagemagick.org/index.php) inspired by [mruby-mrmagick](https://github.com/kjunichi/mruby-mrmagick)
 
 ## Example
 
