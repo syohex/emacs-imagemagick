@@ -32,7 +32,9 @@
 ;;;###autoload
 (defun imagemagick-init ()
   "Initialize imagemagick module"
-  (imagemagick-core-init))
+  (unless imagemagick--initialized
+    (imagemagick-core-init)
+    (setq imagemagick--initialized t)))
 
 (defun imagemagick-scale (src dest geo)
   "Resize `src' image by `geo' and write it to `dest'.
