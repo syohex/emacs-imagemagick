@@ -27,7 +27,7 @@ Emacs binding of [imagemagick](https://imagemagick.org/index.php) inspired by [m
 |------------------------|-----------------------|
 |![orig](image/Lenna.png)|![blur](image/blur.png)|
 
-### Get modules
+### Get size
 
 ```lisp
 (imagemagick-init)
